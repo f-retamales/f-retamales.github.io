@@ -4,10 +4,12 @@
     <meta charset="UTF-8"> 
     <title>Título de la página</title>
     <link rel="stylesheet" href="style.css">
+    <style >body {font-family: 'Arial'}</style>
+    <style> #tabla {background-color: 'light-blue'}</style>
 
 </head>
 <body>
-    <h1> About me:</h1>
+    <h1 style = 'font-family: Time New Roman'> About me:</h1>
 
     <ul> 
         <li> Name: Florencia Retamales </li>
@@ -16,10 +18,10 @@
         <li><a href="https://github.com/f-retamales/f-retamales.github.io.git">This is the link to my Github</a> </li>
         <li> Personal summary: I am a third-year student of Industrial Civil Engineering at the University of the Andes. I consider myself a responsible, efficient person, adaptable to change and continuous learning, persistent, and achievement-oriented with excellent interpersonal relationships and leadership in my functions</li>
         <li> Level of expertise: </li>
-        <table id="primera tabla">
-            <tr class="table-header"> <!-- Fila de la tabla -->
-                <td> Skill </td>
-                <td> Level </td>
+        <table id = "tabla">
+            <tr class="table-header"> 
+                <td class = "rosado"> Skill </td>
+                <td class = "rosado"> Level </td>
             </tr>
             <tr>
                 <td> Python </td>
@@ -59,6 +61,12 @@
             </tr>
         </table>
     </ul>
+    <input type="text" id="inputValue" placeholder="Introduce un valor">
+    <button onclick="document.getElementById('dynamicSection').innerHTML = document.getElementById('inputValue').value + '</p>';">Actualizar Sección</button>
+
+    <div id="dynamicSection">
+        <p>Este contenido se actualizará.</p>
+    </div>
 
 </body>
 </html>
