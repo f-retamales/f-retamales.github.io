@@ -2,9 +2,14 @@
     background-color: lightblue;
     color:black;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    margin-left: 100px;
 }
 
 .rosado{
     color: violet
+}
+
+.underlined {
+    text-decoration: underline;
 }
