@@ -13,3 +13,7 @@
 .underlined {
     text-decoration: underline;
 }
+
+.texto-centrado{
+    text-align: center;
+}
